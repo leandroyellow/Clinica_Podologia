@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClinicaPodoDataSet" targetNamespace="http://tempuri.org/ClinicaPodoDataSet.xsd" xmlns:mstns="http://tempuri.org/ClinicaPodoDataSet.xsd" xmlns="http://tempuri.org/ClinicaPodoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ClinicaPodoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ClinicaPodoConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ClinicaPodologia.Properties.Settings.GlobalReference.Default.ClinicaPodoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_DEBITO_CREDITOTableAdapter" GeneratorDataComponentClassName="VW_DEBITO_CREDITOTableAdapter" Name="VW_DEBITO_CREDITO" UserDataComponentName="VW_DEBITO_CREDITOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClinicaPodoConnectionString (Settings)" DbObjectName="ClinicaPodo.dbo.VW_DEBITO_CREDITO" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nome, ID_Profissional, DEBITO, CREDITO, ANO_MES FROM VW_DEBITO_CREDITO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nome" DataSetColumn="Nome" />
+              <Mapping SourceColumn="ID_Profissional" DataSetColumn="ID_Profissional" />
+              <Mapping SourceColumn="DEBITO" DataSetColumn="DEBITO" />
+              <Mapping SourceColumn="CREDITO" DataSetColumn="CREDITO" />
+              <Mapping SourceColumn="ANO_MES" DataSetColumn="ANO_MES" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_LISTA_CREDITOSTableAdapter" GeneratorDataComponentClassName="VW_LISTA_CREDITOSTableAdapter" Name="VW_LISTA_CREDITOS" UserDataComponentName="VW_LISTA_CREDITOSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClinicaPodoConnectionString (Settings)" DbObjectName="ClinicaPodo.dbo.VW_LISTA_CREDITOS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DATA, MES, valor, tipo, ID_Profissional FROM dbo.VW_LISTA_CREDITOS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DATA" DataSetColumn="DATA" />
+              <Mapping SourceColumn="MES" DataSetColumn="MES" />
+              <Mapping SourceColumn="valor" DataSetColumn="valor" />
+              <Mapping SourceColumn="tipo" DataSetColumn="tipo" />
+              <Mapping SourceColumn="ID_Profissional" DataSetColumn="ID_Profissional" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VW_LISTA_DEBITOSTableAdapter" GeneratorDataComponentClassName="VW_LISTA_DEBITOSTableAdapter" Name="VW_LISTA_DEBITOS" UserDataComponentName="VW_LISTA_DEBITOSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ClinicaPodoConnectionString (Settings)" DbObjectName="ClinicaPodo.dbo.VW_LISTA_DEBITOS" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DATA, MES, valor, tipo, ID_Profissional FROM dbo.VW_LISTA_DEBITOS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DATA" DataSetColumn="DATA" />
+              <Mapping SourceColumn="MES" DataSetColumn="MES" />
+              <Mapping SourceColumn="valor" DataSetColumn="valor" />
+              <Mapping SourceColumn="tipo" DataSetColumn="tipo" />
+              <Mapping SourceColumn="ID_Profissional" DataSetColumn="ID_Profissional" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ClinicaPodoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ClinicaPodoDataSet" msprop:Generator_UserDSName="ClinicaPodoDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VW_DEBITO_CREDITO" msprop:Generator_TableClassName="VW_DEBITO_CREDITODataTable" msprop:Generator_TableVarName="tableVW_DEBITO_CREDITO" msprop:Generator_TablePropName="VW_DEBITO_CREDITO" msprop:Generator_RowDeletingName="VW_DEBITO_CREDITORowDeleting" msprop:Generator_RowChangingName="VW_DEBITO_CREDITORowChanging" msprop:Generator_RowEvHandlerName="VW_DEBITO_CREDITORowChangeEventHandler" msprop:Generator_RowDeletedName="VW_DEBITO_CREDITORowDeleted" msprop:Generator_UserTableName="VW_DEBITO_CREDITO" msprop:Generator_RowChangedName="VW_DEBITO_CREDITORowChanged" msprop:Generator_RowEvArgName="VW_DEBITO_CREDITORowChangeEvent" msprop:Generator_RowClassName="VW_DEBITO_CREDITORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" msprop:Generator_UserColumnName="Nome">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Profissional" msprop:Generator_ColumnVarNameInTable="columnID_Profissional" msprop:Generator_ColumnPropNameInRow="ID_Profissional" msprop:Generator_ColumnPropNameInTable="ID_ProfissionalColumn" msprop:Generator_UserColumnName="ID_Profissional" type="xs:int" minOccurs="0" />
+              <xs:element name="DEBITO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDEBITO" msprop:Generator_ColumnPropNameInRow="DEBITO" msprop:Generator_ColumnPropNameInTable="DEBITOColumn" msprop:Generator_UserColumnName="DEBITO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREDITO" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCREDITO" msprop:Generator_ColumnPropNameInRow="CREDITO" msprop:Generator_ColumnPropNameInTable="CREDITOColumn" msprop:Generator_UserColumnName="CREDITO" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ANO_MES" msprop:Generator_ColumnVarNameInTable="columnANO_MES" msprop:Generator_ColumnPropNameInRow="ANO_MES" msprop:Generator_ColumnPropNameInTable="ANO_MESColumn" msprop:Generator_UserColumnName="ANO_MES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="61" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VW_LISTA_CREDITOS" msprop:Generator_TableClassName="VW_LISTA_CREDITOSDataTable" msprop:Generator_TableVarName="tableVW_LISTA_CREDITOS" msprop:Generator_TablePropName="VW_LISTA_CREDITOS" msprop:Generator_RowDeletingName="VW_LISTA_CREDITOSRowDeleting" msprop:Generator_RowChangingName="VW_LISTA_CREDITOSRowChanging" msprop:Generator_RowEvHandlerName="VW_LISTA_CREDITOSRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_LISTA_CREDITOSRowDeleted" msprop:Generator_UserTableName="VW_LISTA_CREDITOS" msprop:Generator_RowChangedName="VW_LISTA_CREDITOSRowChanged" msprop:Generator_RowEvArgName="VW_LISTA_CREDITOSRowChangeEvent" msprop:Generator_RowClassName="VW_LISTA_CREDITOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA" msprop:Generator_ColumnVarNameInTable="columnDATA" msprop:Generator_ColumnPropNameInRow="DATA" msprop:Generator_ColumnPropNameInTable="DATAColumn" msprop:Generator_UserColumnName="DATA" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MES" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMES" msprop:Generator_ColumnPropNameInRow="MES" msprop:Generator_ColumnPropNameInTable="MESColumn" msprop:Generator_UserColumnName="MES" type="xs:int" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" msprop:Generator_UserColumnName="valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tipo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Profissional" msprop:Generator_ColumnVarNameInTable="columnID_Profissional" msprop:Generator_ColumnPropNameInRow="ID_Profissional" msprop:Generator_ColumnPropNameInTable="ID_ProfissionalColumn" msprop:Generator_UserColumnName="ID_Profissional" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VW_LISTA_DEBITOS" msprop:Generator_TableClassName="VW_LISTA_DEBITOSDataTable" msprop:Generator_TableVarName="tableVW_LISTA_DEBITOS" msprop:Generator_TablePropName="VW_LISTA_DEBITOS" msprop:Generator_RowDeletingName="VW_LISTA_DEBITOSRowDeleting" msprop:Generator_RowChangingName="VW_LISTA_DEBITOSRowChanging" msprop:Generator_RowEvHandlerName="VW_LISTA_DEBITOSRowChangeEventHandler" msprop:Generator_RowDeletedName="VW_LISTA_DEBITOSRowDeleted" msprop:Generator_UserTableName="VW_LISTA_DEBITOS" msprop:Generator_RowChangedName="VW_LISTA_DEBITOSRowChanged" msprop:Generator_RowEvArgName="VW_LISTA_DEBITOSRowChangeEvent" msprop:Generator_RowClassName="VW_LISTA_DEBITOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DATA" msprop:Generator_ColumnVarNameInTable="columnDATA" msprop:Generator_ColumnPropNameInRow="DATA" msprop:Generator_ColumnPropNameInTable="DATAColumn" msprop:Generator_UserColumnName="DATA" type="xs:dateTime" />
+              <xs:element name="MES" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMES" msprop:Generator_ColumnPropNameInRow="MES" msprop:Generator_ColumnPropNameInTable="MESColumn" msprop:Generator_UserColumnName="MES" type="xs:int" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" msprop:Generator_UserColumnName="valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tipo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Profissional" msprop:Generator_ColumnVarNameInTable="columnID_Profissional" msprop:Generator_ColumnPropNameInRow="ID_Profissional" msprop:Generator_ColumnPropNameInTable="ID_ProfissionalColumn" msprop:Generator_UserColumnName="ID_Profissional" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_LISTA_CREDITOS" />
+      <xs:field xpath="mstns:ID_Profissional" />
+    </xs:unique>
+    <xs:unique name="VW_LISTA_DEBITOS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VW_LISTA_DEBITOS" />
+      <xs:field xpath="mstns:ID_Profissional" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
